@@ -50,12 +50,6 @@ test('Testando se ao clicar em "about", é redirecionado para a página about', 
   });
   userEvent.click(aboutLink);
   const pathName = history.location.pathname;
-  // const aboutTitle = screen.getByRole('heading', {
-  //   level: 2,
-  //   name: /about pokédex/i,
-  // });
-
-  // expect(aboutTitle).toBeInTheDocument();
   expect(pathName).toBe('/about');
 });
 
