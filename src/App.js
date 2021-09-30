@@ -71,23 +71,23 @@ class App extends Component {
     const favoritePokemons = pokemons.filter(({ id }) => isPokemonFavoriteById[id]);
 
     return (
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={ ({ match }) => this.renderPokedex(match) }
-        />
-        <Route
-          path="/pokemons/:id"
-          render={ ({ match }) => this.renderPokemonDetails(match) }
-        />
-        <Route
-          path="/favorites"
-          render={ () => <FavoritePokemons pokemons={ favoritePokemons } /> }
-        />
-        <Route path="/about" component={ About } />
-        <Route component={ NotFound } />
-      </Switch>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={ ({ match }) => this.renderPokedex(match) }
+          />
+          <Route
+            path="/pokemons/:id"
+            render={ ({ match }) => this.renderPokemonDetails(match) }
+          />
+          <Route
+            path="/favorites"
+            render={ () => <FavoritePokemons pokemons={ favoritePokemons } /> }
+          />
+          <Route path="/about" component={ About } />
+          <Route component={ NotFound } />
+        </Switch>
     );
   }
 
