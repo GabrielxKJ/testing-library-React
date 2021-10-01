@@ -33,12 +33,6 @@ describe('testes do requisito 1', () => {
     });
     userEvent.click(homeLink);
     const pathName = history.location.pathname;
-    // const homeTitle = screen.getByRole('heading', {
-    //   level: 2,
-    //   name: /Encountered pokémons/i,
-    // });
-
-    // expect(homeTitle).toBeInTheDocument();
     expect(pathName).toBe('/');
   });
 });
