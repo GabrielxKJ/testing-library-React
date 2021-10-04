@@ -4,8 +4,7 @@ import userEvent from '@testing-library/user-event';
 import App from '../App';
 import renderWithRouter from '../helper/renderWithRouter';
 import pokemons from '../data';
-// Algumas Lógicas inspiradas do repo abaixo.
-// https:// github.com/tryber/sd-08-project-react-testing-library/pull/130/commits/40f05da4b01525e189cfa97bf6068013719b3080
+
 describe('Requisito 5', () => {
   test('Teste se a pagina contém um heading lvl2 com'
   + 'o texto "Encountered pokémons"', () => {

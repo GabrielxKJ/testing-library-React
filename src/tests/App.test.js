@@ -54,12 +54,6 @@ test('Testando se ao clicar no link Favorite Pokemons redireciona pra rota certa
   });
   userEvent.click(FavoriteLink);
   const pathName = history.location.pathname;
-  // const favoriteTitle = screen.getByRole('heading', {
-  //   level: 2,
-  //   name: /Favorite pokémons/i,
-  // });
-
-  // expect(favoriteTitle).toBeInTheDocument();
   expect(pathName).toBe('/favorites');
 });
 
